@@ -1,0 +1,184 @@
+n'http://simu-project.de/XMLSchema/1'[uint(4)] {
+	t'service'[uint(0)] {
+		a'administrative-domain'[uint(0)] {}
+		a'type'[uint(1)] {}
+		a'name'[uint(2)] {}
+		a'port'[uint(3)] {}
+	}
+	t'implementation'[uint(1)] {
+		a'administrative-domain'[uint(0)] {}
+		a'name'[uint(1)] {}
+		a'version'[uint(2)] {}
+		a'local-version'[uint(3)] {}
+		a'platform'[uint(4)] {}
+	}
+	t'vulnerability'[uint(2)] {
+		a'administrative-domain'[uint(0)] {}
+		a'type'[uint(1)] {}
+		a'id'[uint(2)] {}
+		a'severity-score'[uint(3)] {}
+	}
+	t'latency'[uint(3)] {
+		a'ifmap-publisher-id'[uint(0)] {}
+		a'ifmap-timestamp'[uint(1)] {}
+		a'ifmap-timestamp-fraction'[uint(2)] {}
+		a'ifmap-cardinality'[uint(3)] {
+			e'singleValue'[uint(0)]
+			e'multiValue'[uint(1)]
+		}
+	}
+	t'hop-count'[uint(4)] {
+		a'ifmap-publisher-id'[uint(0)] {}
+		a'ifmap-timestamp'[uint(1)] {}
+		a'ifmap-timestamp-fraction'[uint(2)] {}
+		a'ifmap-cardinality'[uint(3)] {
+			e'singleValue'[uint(0)]
+			e'multiValue'[uint(1)]
+		}
+	}
+	t'service-ip'[uint(5)] {
+		a'ifmap-publisher-id'[uint(0)] {}
+		a'ifmap-timestamp'[uint(1)] {}
+		a'ifmap-timestamp-fraction'[uint(2)] {}
+		a'ifmap-cardinality'[uint(3)] {
+			e'singleValue'[uint(0)]
+			e'multiValue'[uint(1)]
+		}
+	}
+	t'service-implementation'[uint(6)] {
+		a'ifmap-publisher-id'[uint(0)] {}
+		a'ifmap-timestamp'[uint(1)] {}
+		a'ifmap-timestamp-fraction'[uint(2)] {}
+		a'ifmap-cardinality'[uint(3)] {
+			e'singleValue'[uint(0)]
+			e'multiValue'[uint(1)]
+		}
+	}
+	t'implementation-vulnerability'[uint(7)] {
+		a'ifmap-publisher-id'[uint(0)] {}
+		a'ifmap-timestamp'[uint(1)] {}
+		a'ifmap-timestamp-fraction'[uint(2)] {}
+		a'ifmap-cardinality'[uint(3)] {
+			e'singleValue'[uint(0)]
+			e'multiValue'[uint(1)]
+		}
+	}
+	t'attack-detected'[uint(8)] {
+		a'ifmap-publisher-id'[uint(0)] {}
+		a'ifmap-timestamp'[uint(1)] {}
+		a'ifmap-timestamp-fraction'[uint(2)] {}
+		a'ifmap-cardinality'[uint(3)] {
+			e'singleValue'[uint(0)]
+			e'multiValue'[uint(1)]
+		}
+		t'type'[uint(0)] {}
+		t'id'[uint(1)] {}
+		t'severity-score'[uint(2)] {}
+	}
+	t'identifies-as'[uint(9)] {
+		a'ifmap-publisher-id'[uint(0)] {}
+		a'ifmap-timestamp'[uint(1)] {}
+		a'ifmap-timestamp-fraction'[uint(2)] {}
+		a'ifmap-cardinality'[uint(3)] {
+			e'singleValue'[uint(0)]
+			e'multiValue'[uint(1)]
+		}
+	}
+	t'login-failure'[uint(10)] {
+		a'ifmap-publisher-id'[uint(0)] {}
+		a'ifmap-timestamp'[uint(1)] {}
+		a'ifmap-timestamp-fraction'[uint(2)] {}
+		a'ifmap-cardinality'[uint(3)] {
+			e'singleValue'[uint(0)]
+			e'multiValue'[uint(1)]
+		}
+		t'credential-type'[uint(0)] {
+			e'Password'[uint(0)]
+			e'Public Key'[uint(1)]
+			e'Biometric'[uint(2)]
+			e'Token'[uint(3)]
+			e'Other'[uint(4)]
+		}
+		t'reason'[uint(1)] {
+			e'Invalid Account'[uint(0)]
+			e'Invalid Credentials'[uint(1)]
+			e'Expired Credentials'[uint(2)]
+			e'Communication Failure'[uint(3)]
+			e'Unknown'[uint(4)]
+			e'Other'[uint(5)]
+		}
+		t'other-credential-type-definition'[uint(2)] {}
+		t'other-reason-type-definition'[uint(3)] {}
+	}
+	t'login-success'[uint(11)] {
+		a'ifmap-publisher-id'[uint(0)] {}
+		a'ifmap-timestamp'[uint(1)] {}
+		a'ifmap-timestamp-fraction'[uint(2)] {}
+		a'ifmap-cardinality'[uint(3)] {
+			e'singleValue'[uint(0)]
+			e'multiValue'[uint(1)]
+		}
+		t'credential-type'[uint(0)] {
+			e'Password'[uint(0)]
+			e'Public Key'[uint(1)]
+			e'Biometric'[uint(2)]
+			e'Token'[uint(3)]
+			e'Other'[uint(4)]
+		}
+		t'other-credential-type-definition'[uint(1)] {}
+	}
+	t'service-discovered-by'[uint(12)] {
+		a'ifmap-publisher-id'[uint(0)] {}
+		a'ifmap-timestamp'[uint(1)] {}
+		a'ifmap-timestamp-fraction'[uint(2)] {}
+		a'ifmap-cardinality'[uint(3)] {
+			e'singleValue'[uint(0)]
+			e'multiValue'[uint(1)]
+		}
+	}
+	t'device-discovered-by'[uint(13)] {
+		a'ifmap-publisher-id'[uint(0)] {}
+		a'ifmap-timestamp'[uint(1)] {}
+		a'ifmap-timestamp-fraction'[uint(2)] {}
+		a'ifmap-cardinality'[uint(3)] {
+			e'singleValue'[uint(0)]
+			e'multiValue'[uint(1)]
+		}
+		t'discoverer'[uint(0)] {}
+	}
+	t'file'[uint(14)] {
+		a'administrative-domain'[uint(0)] {}
+		a'path'[uint(1)] {}
+	}
+	t'file-monitored'[uint(15)] {
+		a'ifmap-publisher-id'[uint(0)] {}
+		a'ifmap-timestamp'[uint(1)] {}
+		a'ifmap-timestamp-fraction'[uint(2)] {}
+		a'ifmap-cardinality'[uint(3)] {
+			e'singleValue'[uint(0)]
+			e'multiValue'[uint(1)]
+		}
+	}
+	t'file-status'[uint(16)] {
+		a'ifmap-publisher-id'[uint(0)] {}
+		a'ifmap-timestamp'[uint(1)] {}
+		a'ifmap-timestamp-fraction'[uint(2)] {}
+		a'ifmap-cardinality'[uint(3)] {
+			e'singleValue'[uint(0)]
+			e'multiValue'[uint(1)]
+		}
+		t'status'[uint(0)] {
+			e'new'[uint(0)]
+			e'modified'[uint(1)]
+			e'deleted'[uint(2)]
+			e'existing'[uint(3)]
+		}
+		t'discovered-time'[uint(1)] {}
+		t'importance'[uint(2)] {
+			e'low'[uint(0)]
+			e'medium'[uint(1)]
+			e'high'[uint(2)]
+			e'critical'[uint(3)]
+		}
+	}
+}
